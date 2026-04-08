@@ -79,7 +79,7 @@ uav-roll-attitude-control/
 ### 🔹 LQR Control
 
 <p align="center">
-  <img src="lqr_control/results/lqr_response.png" width="600">
+  <img src="lqr_control/result/lqr_vs_pole_placement.jpg" width="600">
 </p>
 
 - Optimized control effort  
