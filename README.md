@@ -135,22 +135,29 @@ uav-roll-attitude-control/
 cd('roll_attitude_control')
 ```
 ---
-###⚙️ What This Project Demonstrates
-Control of a real-world dynamic system (UAV roll axis)
-Comparison of classical and modern control methods
-Trade-offs between performance and complexity
-Effect of disturbances and system uncertainties
-🛠 Tools Used
-MATLAB
-Control System Toolbox
+## ⚙️ What This Project Demonstrates
+
+- Control of a real-world dynamic system (UAV roll axis)  
+- Comparison of classical and modern control methods  
+- Trade-offs between performance and complexity  
+- Effect of disturbances and system uncertainties  
+
 ---
-###🎯 Conclusion
+
+## 🛠 Tools Used
+
+- MATLAB  
+- Control System Toolbox  
+
+---
+
+## 🎯 Conclusion
 
 Different control strategies provide different levels of performance for UAV roll stabilization:
 
-PID → simple and practical
-State feedback → improved accuracy
-LQR → optimal control
-Robustness analysis → ensures reliability
+- PID → simple and practical  
+- State feedback → improved accuracy  
+- LQR → optimal control  
+- Robustness analysis → ensures reliability  
 
 👉 Selecting the right controller depends on system requirements and constraints.
