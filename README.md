@@ -54,10 +54,22 @@ uav-roll-attitude-control/
 ├── lqr_control/  
 ├── robustness_and_optimality/  
 
+
 👉 Each folder represents a different control strategy.
 
 ---
-time  
+
+## 📷 Results & Analysis
+
+### 🔹 PID Control (Closed Loop)
+
+<p align="center">
+  <img src="roll_attitude_control/result/closed_loop_response.png" width="600">
+</p>
+
+- Stabilizes roll angle  
+- Reduces oscillations  
+- Faster settling time  
 - Tested under disturbance input  
 
 👉 Provides stable roll control but requires tuning for optimal performance.
@@ -67,7 +79,7 @@ time
 ### 🔹 State Feedback + Integral Control
 
 <p align="center">
-  <img src="state_feedback_integral/results/state_feedback.png" width="600">
+  <img src="state_feedback_integral/result/msd_state_feedback_integral.png" width="600">
 </p>
 
 - Eliminates steady-state error  
@@ -80,7 +92,7 @@ time
 ### 🔹 LQR Control
 
 <p align="center">
-  <img src="lqr_control/results/lqr_response.png" width="600">
+  <img src="lqr_control/result/lqr_vs_pole_placement.jpg" width="600">
 </p>
 
 - Optimized control effort  
@@ -93,7 +105,7 @@ time
 ### 🔹 Robustness Analysis
 
 <p align="center">
-  <img src="robustness_and_optimality/results/robustness.png" width="600">
+  <img src="robustness_and_optimality/result/aggresive_vs_safe.png" width="600">
 </p>
 
 - Evaluates system under parameter variations  
@@ -121,31 +133,24 @@ time
 
 ```matlab
 cd('roll_attitude_control')
-
 ```
-## ⚙️ What This Project Demonstrates
-
-- Control of a real-world dynamic system (UAV roll axis)  
-- Comparison of classical and modern control methods  
-- Trade-offs between performance and complexity  
-- Effect of disturbances and system uncertainties  
-
 ---
-
-## 🛠 Tools Used
-
-- MATLAB  
-- Control System Toolbox  
-
+###⚙️ What This Project Demonstrates
+Control of a real-world dynamic system (UAV roll axis)
+Comparison of classical and modern control methods
+Trade-offs between performance and complexity
+Effect of disturbances and system uncertainties
+🛠 Tools Used
+MATLAB
+Control System Toolbox
 ---
-
-## 🎯 Conclusion
+###🎯 Conclusion
 
 Different control strategies provide different levels of performance for UAV roll stabilization:
 
-- PID → simple and practical  
-- State feedback → improved accuracy  
-- LQR → optimal control  
-- Robustness analysis → ensures reliability  
+PID → simple and practical
+State feedback → improved accuracy
+LQR → optimal control
+Robustness analysis → ensures reliability
 
 👉 Selecting the right controller depends on system requirements and constraints.
