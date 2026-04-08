@@ -47,11 +47,6 @@ This project explores multiple control techniques:
 ---
 
 ## 📂 Project Structure
-
-
----
-
-## 📂 Project Structure
 uav-roll-attitude-control/  
 
 ├── roll_attitude_control/  
