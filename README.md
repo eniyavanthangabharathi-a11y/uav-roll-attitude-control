@@ -66,7 +66,7 @@ uav-roll-attitude-control/
 ### 🔹 State Feedback + Integral Control
 
 <p align="center">
-  <img src="state_feedback_integral/results/state_feedback.png" width="600">
+  <img src="state_feedback_integral/result/msd_state_feedback_integral.png" width="600">
 </p>
 
 - Eliminates steady-state error  
