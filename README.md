@@ -22,6 +22,17 @@ Objective:
 
 ---
 
+## ⚙️ System Model
+
+The UAV roll axis is modeled as a second-order system:
+
+- Input → control torque  
+- Output → roll angle  
+
+👉 This simplified model captures essential roll dynamics for controller design and analysis.
+
+---
+
 ## 🧩 Control Strategies Implemented
 
 This project explores multiple control techniques:
@@ -36,6 +47,11 @@ This project explores multiple control techniques:
 ---
 
 ## 📂 Project Structure
+
+
+---
+
+## 📂 Project Structure
 uav-roll-attitude-control/  
 
 ├── roll_attitude_control/  
@@ -46,28 +62,21 @@ uav-roll-attitude-control/
 👉 Each folder represents a different control strategy.
 
 ---
+time  
+- Tested under disturbance input  
 
-## 📷 Results & Analysis
-
-### 🔹closed loop
-
-<p align="center">
-  <img src="roll_attitude_control/result/closed_loop_response.png" width="600">
-</p>
-
-
-👉 Basic and practical control approach.
+👉 Provides stable roll control but requires tuning for optimal performance.
 
 ---
 
 ### 🔹 State Feedback + Integral Control
 
 <p align="center">
-  <img src="state_feedback_integral/result/msd_state_feedback_integral.png" width="600">
+  <img src="state_feedback_integral/results/state_feedback.png" width="600">
 </p>
 
 - Eliminates steady-state error  
-- Improved disturbance rejection  
+- Improves disturbance rejection  
 
 👉 Combines stability with accuracy.
 
@@ -76,7 +85,7 @@ uav-roll-attitude-control/
 ### 🔹 LQR Control
 
 <p align="center">
-  <img src="lqr_control/result/lqr_vs_pole_placement.jpg" width="600">
+  <img src="lqr_control/results/lqr_response.png" width="600">
 </p>
 
 - Optimized control effort  
@@ -89,7 +98,7 @@ uav-roll-attitude-control/
 ### 🔹 Robustness Analysis
 
 <p align="center">
-  <img src="robustness_and_optimality/result/aggresive_vs_safe.png" width="600">
+  <img src="robustness_and_optimality/results/robustness.png" width="600">
 </p>
 
 - Evaluates system under parameter variations  
@@ -115,10 +124,9 @@ uav-roll-attitude-control/
 1. Open MATLAB  
 2. Navigate to any control method folder  
 
-Example:
-
 ```matlab
 cd('roll_attitude_control')
+
 ```
 ## ⚙️ What This Project Demonstrates
 
