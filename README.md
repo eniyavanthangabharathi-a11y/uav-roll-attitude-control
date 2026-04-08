@@ -49,15 +49,12 @@ uav-roll-attitude-control/
 
 ## 📷 Results & Analysis
 
-### 🔹 PID Control (Roll Stabilization)
+### 🔹closed loop
 
 <p align="center">
-  <img src="roll_attitude_control/results/pid_response.png" width="600">
+  <img src="roll_attitude_control/result/closed_loop_response.png" width="600">
 </p>
 
-- Stabilizes roll angle  
-- Reduces oscillations  
-- Achieves acceptable settling time  
 
 👉 Basic and practical control approach.
 
@@ -92,7 +89,7 @@ uav-roll-attitude-control/
 ### 🔹 Robustness Analysis
 
 <p align="center">
-  <img src="robustness_and_optimality/results/robustness.png" width="600">
+  <img src="robustness_and_optimality/result/aggresive_vs_safe.png" width="600">
 </p>
 
 - Evaluates system under parameter variations  
